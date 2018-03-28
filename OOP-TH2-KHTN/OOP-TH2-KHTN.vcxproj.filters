@@ -18,9 +18,42 @@
     <ClInclude Include="Fraction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ComplexNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Candidate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Date.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestCandidate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Fraction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Candidate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestCandidate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
