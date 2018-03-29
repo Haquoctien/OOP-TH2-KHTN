@@ -13,6 +13,7 @@ public:
 	void output() const;
 	ComplexNumber operator+(const ComplexNumber &) const;
 	ComplexNumber operator-(const ComplexNumber &) const;
+	ComplexNumber operator*(const ComplexNumber &) const;
 	ComplexNumber conjugate() const;
 };
 
