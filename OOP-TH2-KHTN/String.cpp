@@ -7,6 +7,13 @@ String::String()
 	str = NULL;
 }
 
+String::String(const String &other)
+{
+	if (this->str != NULL)
+		delete[] str;
+	str = strdup(other.str);
+}
+
 
 String::~String()
 {

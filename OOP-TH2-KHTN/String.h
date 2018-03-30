@@ -10,6 +10,7 @@ private:
 	char *str;
 public:
 	String();
+	String(const String&);
 	~String();
 	void getline(istream&);
 	void getline();
