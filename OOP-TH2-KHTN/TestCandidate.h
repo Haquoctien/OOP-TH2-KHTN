@@ -9,7 +9,8 @@ public:
 	TestCandidate();
 	~TestCandidate();
 	void input();
+	void input(istream &);
 	void output() const;
-	void outputCandidatesWithTotalPointsAbove(int) const;
+	void output(int) const;
 };
 

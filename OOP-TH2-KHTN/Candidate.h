@@ -11,6 +11,7 @@ public:
 	Candidate();
 	~Candidate();
 	void input();
+	void input(istream &);
 	void ouput();
 	float getSumOfAllPoints();
 };

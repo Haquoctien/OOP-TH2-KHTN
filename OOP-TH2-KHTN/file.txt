@@ -1,0 +1,13 @@
+3
+tct001
+Ha Quoc Tien
+13/07/1998
+9 0 7
+cml009
+Nguyen Thi Hoa
+14/09/1999
+8 0 7
+ppl002
+Le Van Phuc
+09/06/1999
+5 5 9

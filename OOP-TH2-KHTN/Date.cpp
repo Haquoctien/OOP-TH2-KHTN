@@ -10,22 +10,49 @@ Date::~Date()
 
 void Date::nhap()
 {
-	char date[11];
+
+	day = month = year = -1;
+	int flag = 0;
 	do
 	{
-		cin.getline(date, 11);
+		if (flag)
+			cout << "Nhap ngay khong hop le, nhap lai: ";
+		flag++;
+		char date[32];
+		cin.getline(date, 14);
+		if ((strlen(date)) == 0)
+			continue;
 
 		char delim[5] = " /-.";
 		char *ptr = nullptr;
 
-		char temp[5];
+		char temp[32];
 		strcpy_s(temp, strtok_s(date, delim, &ptr));
 		day = atoi(temp);
-		strcpy_s(temp, strtok_s(nullptr, delim, &ptr));
-		month = atoi(temp);
-		strcpy_s(temp, strtok_s(nullptr, delim, &ptr));
-		year = atoi(temp);
+		if (*ptr) {
+			strcpy_s(temp, strtok_s(nullptr, delim, &ptr));
+			month = atoi(temp);
+		}
+		if (*ptr) {
+			strcpy_s(temp, strtok_s(nullptr, delim, &ptr));
+			year = atoi(temp);
+		}
 	} while (!isDate(day, month, year));
+}
+
+void Date::nhap(istream &file)
+{
+	char date[32];
+	file.getline(date, 14);
+	char delim[5] = " /-.";
+	char *ptr = nullptr;
+	char temp[32];
+	strcpy_s(temp, strtok_s(date, delim, &ptr));
+	day = atoi(temp);
+	strcpy_s(temp, strtok_s(nullptr, delim, &ptr));
+	month = atoi(temp);
+	strcpy_s(temp, strtok_s(nullptr, delim, &ptr));
+	year = atoi(temp);
 }
 void Date::xuat() const
 {
@@ -33,7 +60,7 @@ void Date::xuat() const
 }
 bool isDate(int dd, int mm, int yy)
 {
-	if (dd < 1 && mm < 1 && yy < 1)
+	if (dd < 1 || mm < 1 || yy < 1)
 		return false;
 	if (dd > 31)
 		return false;

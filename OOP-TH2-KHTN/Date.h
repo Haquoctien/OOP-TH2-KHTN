@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <fstream>
 using namespace std;
 bool isDate(int, int, int);
 class Date
@@ -10,6 +11,7 @@ public:
 	Date();
 	~Date();
 	void nhap();
+	void nhap(istream &);
 	void xuat() const;
 };
 
