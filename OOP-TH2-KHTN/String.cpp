@@ -61,3 +61,4 @@ void String::ouput()
 {
 	cout << str << endl;
 }
+

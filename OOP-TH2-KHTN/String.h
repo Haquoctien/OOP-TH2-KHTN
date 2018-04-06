@@ -16,5 +16,5 @@ public:
 	void getline();
 	int getLength();
 	void ouput();
+	friend ostream & operator<<(ostream &os, const String &str);
 };
-

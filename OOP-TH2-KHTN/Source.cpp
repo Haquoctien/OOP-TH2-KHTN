@@ -26,3 +26,10 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+ostream & operator<<(ostream & os, const String &str)
+{
+	for (int i = 0; i < str.length; i++)
+		os << str.str[i];
+	return os;
+}
